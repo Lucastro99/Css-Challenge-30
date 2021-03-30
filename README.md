@@ -2,4 +2,4 @@
 Desafio de 30 dias de CSS
 <br>
 <p>- Dia 1</p>
-![grab-landing-page](https://i.ibb.co/kxW8S7f/gifday1.gif)
+https://i.ibb.co/kxW8S7f/gifday1.gif
