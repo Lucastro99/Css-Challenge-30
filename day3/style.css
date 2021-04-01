@@ -1,0 +1,78 @@
+/* zerar css */
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* css base */
+
+h1 {
+    color: #e9e9e9;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 120px;
+}
+
+div {
+    display: flex;
+}
+
+
+/* animação */
+
+section {
+    height: 100vh;
+    width: 100%;
+    color: #32ccb1;
+    background: #161616;
+    overflow: hidden;
+    position: absolute;
+}
+
+.sliding {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    animation: slide 7s linear infinite;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 50%;
+    color: #333;
+    background: #32ccb1;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate(0, -50%);
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
