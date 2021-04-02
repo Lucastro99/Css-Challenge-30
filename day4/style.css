@@ -1,0 +1,77 @@
+/* zerar css */
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* css base */
+
+h1 {
+    color: #e9e9e9;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 120px;
+}
+
+div {
+    display: flex;
+}
+
+
+/* animação */
+
+.btn {
+    width: 200px;
+    height: 60px;
+    color: #00ff80;
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    border: 4px solid;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn::before,
+.btn::after {
+    content: "";
+    width: 14px;
+    height: 4px;
+    background: #281a43;
+    position: absolute;
+    transform: skewX(50deg);
+    transition: .4s ease;
+}
+
+.btn::before {
+    top: -4px;
+    left: 10%;
+}
+
+.btn::after {
+    bottom: -4px;
+    right: 10%;
+}
+
+.btn:hover::before {
+    left: 80%;
+}
+
+.btn:hover::after {
+    right: 80%;
+}
