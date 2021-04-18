@@ -1,0 +1,67 @@
+/* zerar css */
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* css base */
+
+div {
+    display: flex;
+}
+
+h2 {
+    color: #dee4e4;
+    font-family: 'Montserrat', cursive;
+    font-size: 2rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.bouncing {
+    display: flex;
+    border-bottom: 4px solid #cfbfbe;
+}
+
+.bouncing span {
+    width: 32px;
+    height: 32px;
+    background: #00ff6a;
+    border-radius: 50%;
+    margin: 0 10px;
+    animation: bounce 1s linear infinite;
+    animation-delay: calc(.2s * var(--i));
+}
+
+
+/* regras de par e impar */
+
+.bouncing span:nth-child(odd) {
+    background-color: #ae00ff;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-120px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
